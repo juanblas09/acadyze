@@ -1,0 +1,23 @@
+{
+  "manifest_version": 2,
+  "name": "AcaDyze",
+  "version": "1.0",
+
+  "description": "Le da una nueva cara al sistema SysAcad de la UTN FRSF",
+
+  "icons": {
+    "48": "icon/logo-48.png"
+  },
+
+  "content_scripts": [
+    {
+      "matches": ["*://sysacad.frsf.utn.edu.ar/"],
+      "js": ["main.js"]
+    },
+    {
+      "matches": ["*://sysacad.frsf.utn.edu.ar/SysAcad/menuAlumno.asp"],
+      "js": ["menuAlumno.js"]
+    }
+  ]
+
+}
